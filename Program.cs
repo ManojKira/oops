@@ -39,4 +39,12 @@ var request = new PaymentRequest
 };
 
 paymentService.ProcessPayment(request);
+//===================================================================
+
+//3. Covariance and Contravariance example
+CovarianceExample covariance = new CovarianceExample();
+ContravarianceExample contravariance = new ContravarianceExample();
+covariance.covarianceExmple();
+contravariance.contravarianceExmple();
+//===================================================================
 
