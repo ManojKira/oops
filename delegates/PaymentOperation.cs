@@ -1,0 +1,1 @@
+public delegate bool PaymentOperation(PaymentRequest request);
