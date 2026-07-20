@@ -47,3 +47,10 @@
 
 // ContravarianceExample contravarianceExample = new ContravarianceExample();
 // contravarianceExample.contravarianceExmple();
+
+//4. Linq example
+//===================================================================
+linqExample linqExample = new linqExample();
+linqExample.LinqExampleExecute();
+
+Console.ReadLine();
