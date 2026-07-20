@@ -18,33 +18,32 @@
 
 //2. Events example
 //===================================================================
-var paymentService = new PaymentService();
+// var paymentService = new PaymentService();
 
-var email = new EmailService();
+// var email = new EmailService();
 
-var audit = new AuditService();
+// var audit = new AuditService();
 
-var merchant = new MerchantNotificationService();
+// var merchant = new MerchantNotificationService();
 
-//subscribe to events
-paymentService.PaymentCompleted += email.SendReceipt!;
-paymentService.PaymentCompleted += audit.SaveAudit!;
-paymentService.PaymentCompleted += merchant.NotifyMerchant!;
+// //subscribe to events
+// paymentService.PaymentCompleted += email.SendReceipt!;
+// paymentService.PaymentCompleted += audit.SaveAudit!;
+// paymentService.PaymentCompleted += merchant.NotifyMerchant!;
 
-var request = new PaymentRequest
-{
-    PaymentId = "PAY1001",
+// var request = new PaymentRequest
+// {
+//     PaymentId = "PAY1001",
 
-    Amount = 5000
-};
+//     Amount = 5000
+// };
 
-paymentService.ProcessPayment(request);
-//===================================================================
+// paymentService.ProcessPayment(request);
 
 //3. Covariance and Contravariance example
-CovarianceExample covariance = new CovarianceExample();
-ContravarianceExample contravariance = new ContravarianceExample();
-covariance.covarianceExmple();
-contravariance.contravarianceExmple();
 //===================================================================
+// CovarianceExample covarianceExample = new CovarianceExample();
+// covarianceExample.covarianceExmple();   
 
+// ContravarianceExample contravarianceExample = new ContravarianceExample();
+// contravarianceExample.contravarianceExmple();
