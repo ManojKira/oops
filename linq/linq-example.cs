@@ -277,6 +277,25 @@ public class linqExample
         var batch2 = new[] { "P1", "P2", "P3" };
 
         Console.WriteLine(batch1.SequenceEqual(batch2));
+
+        CustomLinqExample(payments);
+    }
+
+    public static void CustomLinqExample(IEnumerable<LinqPayment> payments)
+    {
+        var successfulPayments = payments.Successful();
+        Console.WriteLine("\n========== CUSTOM LINQ EXTENSION ==========");
+        successfulPayments.ToList()
+            .ForEach(x => Console.WriteLine(x.PaymentId));
+    }
+}
+
+public static class PaymentExtensions
+{
+    public static IEnumerable<LinqPayment> Successful(
+        this IEnumerable<LinqPayment> payments)
+    {
+        return payments.Where(p => p.Status == "Success");
     }
 }
 
