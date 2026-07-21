@@ -50,7 +50,11 @@
 
 //4. Linq example
 //===================================================================
-linqExample linqExample = new linqExample();
-linqExample.LinqExampleExecute();
+// linqExample linqExample = new linqExample();
+// linqExample.LinqExampleExecute();
 
-Console.ReadLine();
+//5. Polymorphism, abstract class, record example
+var polymorphAbstractRecord = new PolymorphAbstractRecord();
+polymorphAbstractRecord.ExecutePolymorphAbstract();
+
+Console.WriteLine("\nEnd of program...");
