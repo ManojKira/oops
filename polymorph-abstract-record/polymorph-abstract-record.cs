@@ -12,6 +12,13 @@ public class PolymorphAbstractRecord
 
         Console.WriteLine($"\nPolimorphism and Abstract Example:");
         ExecuteRecordExample();
+
+        Console.WriteLine($"\nRequired Class Example:");
+        var requiredClass = new RequiredClassExample
+        {
+            Name = "Required Name"
+        };
+        Console.WriteLine($"Required name value: {requiredClass.Name}");
     }
 
     public void ExecuteRecordExample()
@@ -60,4 +67,10 @@ public class PayPalPayment : PaymentGatewayService
 
 public record PaymentRequest2(
     string PaymentId,
-    decimal Amount);
+    decimal Amount,
+    string Currency = "USD");
+
+public class RequiredClassExample
+{
+    public required string? Name { get; set; }
+}
