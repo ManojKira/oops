@@ -54,7 +54,11 @@
 // linqExample.LinqExampleExecute();
 
 //5. Polymorphism, abstract class, record example
-var polymorphAbstractRecord = new PolymorphAbstractRecord();
-polymorphAbstractRecord.ExecutePolymorphAbstract();
+// var polymorphAbstractRecord = new PolymorphAbstractRecord();
+// polymorphAbstractRecord.ExecutePolymorphAbstract();
+
+//6. Async and Await example
+//===================================================================
+var asyncAwaitExample = new AsyncAwaitExample();
 
 Console.WriteLine("\nEnd of program...");
