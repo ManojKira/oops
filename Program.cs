@@ -59,6 +59,11 @@
 
 //6. Async and Await example
 //===================================================================
-var asyncAwaitExample = new AsyncAwaitExample();
+// var asyncAwaitExample = new AsyncAwaitExample();
+
+//7. Collections example
+//===================================================================
+CollectionsExample collectionsExample = new CollectionsExample();
+collectionsExample.DemonstrateCollections();
 
 Console.WriteLine("\nEnd of program...");
