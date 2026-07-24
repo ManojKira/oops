@@ -63,7 +63,12 @@
 
 //7. Collections example
 //===================================================================
-CollectionsExample collectionsExample = new CollectionsExample();
-collectionsExample.DemonstrateCollections();
+// CollectionsExample collectionsExample = new CollectionsExample();
+// collectionsExample.DemonstrateCollections();
+
+//8. Pattern Matching example
+//===================================================================
+PatternMatchingExample patternMatchingExample = new PatternMatchingExample();
+patternMatchingExample.DemonstratePatternMatching();
 
 Console.WriteLine("\nEnd of program...");
